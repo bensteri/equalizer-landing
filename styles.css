@@ -1,0 +1,244 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('fonts/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('fonts/IBMPlexSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('fonts/IBMPlexSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Color Palette */
+:root {
+    --color-blue: #66E2DC;
+    --color-orange: #FFA453;
+    --color-yellow: #FFB964;
+    --color-light-grey: #FCFAF9;
+    --color-dark-grey: #191826;
+}
+
+body {
+    font-family: 'IBMPlexSans', sans-serif;
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.header_wrapper{
+    display: flex;
+}
+
+.leftside_wrapper{
+    width: 80%;
+    collor: var(--color-dark-grey);
+}
+
+.app_name{
+    font-weight: bold;
+    font-size: 40px;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.short_description{
+    margin-top: 10%;
+    font-size: 88px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.description{
+    font-size: 20px;
+    line-height: 34px;
+    margin-top: 2%;
+}
+
+.rightside_wrapper{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
+    z-index: 10;
+}
+
+.content{
+    position: relative;
+    background-image: url('/images/content_back.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    width: 100%;
+    height: 800px;
+    margin-top: 25%;
+}
+
+.phone_block{
+    position: absolute;
+    background-image: url('/images/phone.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 20;
+    width: 28%;
+    height: 800px;
+    fill: #000;
+    top: -25%;
+    left: 9.45%;
+    right: 0;
+}
+
+.download_block{
+    position: absolute;
+    background: #FA7453;
+    border-radius: 12px;
+    z-index: 20;
+    width: 35%;
+    left: 50%;
+    bottom: -20%;
+    height: 720px;
+}
+
+.download_wrapper{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+.premium{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    color: var(--color-light-grey);
+}
+
+.premium_description{
+    margin-top: 13%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    color: var(--color-light-grey);
+}
+
+.price{
+    margin-top: 13%;
+    display: flex;
+    align-items: center;
+}
+
+.price_dollar{
+    color: var(--color-light-grey);
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.price_month{
+    color: var(--color-light-grey);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: -0.2px;
+    margin-left: 5%;
+}
+
+.btn_ios{
+    margin-top: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    background: var(--color-dark-grey);
+    height: 60px;
+}
+
+.apple_icon{
+    margin-right: 2%;
+}
+
+.apple_text{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.18px;
+    color: var(--color-light-grey);
+}
+
+.btn_android{
+    margin-top: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    background: var(--color-light-grey);
+    height: 60px;
+}
+
+.android_icon{
+    margin-right: 2%;
+}
+
+.android_text{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.18px;
+    color: var(--color-dark-grey);
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.footer_app_name{
+    width: 30%;
+}
+
+.copyright{
+    width: 30%;
+}
+
+.contact_icons{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
